@@ -1,1 +1,1 @@
-﻿"TubeDiameter" = 6.6929in
+﻿"TubeDiameter" = 6.5433in
