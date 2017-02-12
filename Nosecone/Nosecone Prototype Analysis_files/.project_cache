@@ -1,11 +1,18 @@
-﻿dp0/FFF/Fluent/FFF-Setup-Output.cas.gz
+﻿dp0/FFF/DM/FFF.agdb
+dp0/FFF/Fluent/FFF-4-00030.dat.gz
+dp0/FFF/Fluent/FFF-4.cas.gz
+dp0/FFF/Fluent/FFF-Setup-Output.cas.gz
+dp0/FFF/Fluent/FFF.ip
 dp0/FFF/Fluent/FFF.set
 dp0/FFF/MECH/FFF.msh
 dp0/FFF/Post/Fluid Flow Fluent.cst
+dp0/global/MECH/FFF.mshdb
 dp0/SYS/ENGD/EngineeringData.xml
 dp0/designPoint.wbdp
+progress_files/dp0/FFF/Fluent/report.xml
 session_files/journal1.wbjn
 session_files/journal2.wbjn
+session_files/journal3.wbjn
 dp0/
 progress_files/
 session_files/
@@ -17,7 +24,9 @@ dp0/FFF/Fluent/
 dp0/FFF/MECH/
 dp0/FFF/Post/
 dp0/global/MECH/
+dp0/global/MECH/FFF/
 dp0/SYS/DM/
 dp0/SYS/ENGD/
 progress_files/dp0/
 progress_files/dp0/FFF/
+progress_files/dp0/FFF/Fluent/

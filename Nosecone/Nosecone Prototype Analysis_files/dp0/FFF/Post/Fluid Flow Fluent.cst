@@ -1,4 +1,4 @@
-# State file created:  2017/02/12 11:12:29
+# State file created:  2017/02/12 13:21:50
 # CFX-17.2 build 2016.07.19-00.09-136427
 
 CLIP PLANE:Clip Plane 1
@@ -13,9 +13,34 @@ CLIP PLANE:Clip Plane 1
   Y = 0.0 [m]
   Z = 0.0 [m]
 END
-COMMENT:User Data
+CLIP PLANE:Clip Plane 2
+  Flip Normal = Off
+  Normal = 1 , 0 , 0
+  Option = XY Plane
+  Point = 0 [m], 0 [m], 0 [m]
+  Point 1 = 0 [m], 0 [m], 0 [m]
+  Point 2 = 1 [m], 0 [m], 0 [m]
+  Point 3 = 0 [m], 1 [m], 0 [m]
+  X = 0.0 [m]
+  Y = 0.0 [m]
+  Z = 0.0 [m]
+END
+CLIP PLANE:Clip Plane 3
+  Flip Normal = On
+  Normal = 1 , 0 , 0
+  Option = XY Plane
+  Point = 0 [m], 0 [m], 0 [m]
+  Point 1 = 0 [m], 0 [m], 0 [m]
+  Point 2 = 1 [m], 0 [m], 0 [m]
+  Point 3 = 0 [m], 1 [m], 0 [m]
+  X = 0.0 [m]
+  Y = 0.0 [m]
+  Z = 0.0 [m]
+END
+COMMENT:Generic Report Comment 1
   Comment Exists = True
-  Comment Heading = User Data
+  Comment Heading = Pictures
+  Comment Text = <p></p>
   Heading Level = 1
 END
 CONTOUR:Contour 1
@@ -28,7 +53,7 @@ CONTOUR:Contour 1
   Constant Contour Colour = Off
   Contour Range = Global
   Culling Mode = No Culling
-  Domain List = air
+  Domain List = /DOMAIN GROUP:All Domains
   Draw Contours = On
   Font = Sans Serif
   Fringe Fill = On
@@ -40,7 +65,7 @@ CONTOUR:Contour 1
   Location List = wall air
   Max = 0.0 [Pa]
   Min = 0.0 [Pa]
-  Number of Contours = 11
+  Number of Contours = 50
   Show Numbers = Off
   Specular Lighting = On
   Surface Drawing = Smooth Shading
@@ -50,7 +75,58 @@ CONTOUR:Contour 1
   Transparency = 0.0
   Use Face Values = Off
   Value List = 0 [Pa],1 [Pa]
-  Visibility = true
+  Visibility = Off
+  OBJECT VIEW TRANSFORM:
+    Apply Reflection = Off
+    Apply Rotation = Off
+    Apply Scale = Off
+    Apply Translation = Off
+    Principal Axis = Z
+    Reflection Plane Option = XY Plane
+    Rotation Angle = 0.0 [degree]
+    Rotation Axis From = 0 [m], 0 [m], 0 [m]
+    Rotation Axis To = 0 [m], 0 [m], 0 [m]
+    Rotation Axis Type = Principal Axis
+    Scale Vector = 1 , 1 , 1
+    Translation Vector = 0 [m], 0 [m], 0 [m]
+    X = 0.0 [m]
+    Y = 0.0 [m]
+    Z = 0.0 [m]
+  END
+END
+CONTOUR:Contour 1 Figure 2
+  Apply Instancing Transform = On
+  Clip Contour = Off
+  Colour Map = Default Colour Map
+  Colour Scale = Linear
+  Colour Variable = Pressure
+  Colour Variable Boundary Values = Conservative
+  Constant Contour Colour = Off
+  Contour Range = Global
+  Culling Mode = No Culling
+  Domain List = /DOMAIN GROUP:All Domains
+  Draw Contours = On
+  Font = Sans Serif
+  Fringe Fill = On
+  Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+  Lighting = On
+  Line Colour = 0, 0, 0
+  Line Colour Mode = Default
+  Line Width = 1
+  Location List = wall air
+  Max = 0.0 [Pa]
+  Min = 0.0 [Pa]
+  Number of Contours = 50
+  Show Numbers = Off
+  Specular Lighting = On
+  Surface Drawing = Smooth Shading
+  Text Colour = 0, 0, 0
+  Text Colour Mode = Default
+  Text Height = 0.024
+  Transparency = 0.0
+  Use Face Values = Off
+  Value List = 0 [Pa],1 [Pa]
+  Visibility = Off
   OBJECT VIEW TRANSFORM:
     Apply Reflection = Off
     Apply Rotation = Off
@@ -79,9 +155,9 @@ DATA READER:
   Construct Variables From Fourier Coefficients = True
   Current Case List = Case FFF
   Current Case Name = D:\Projects\UBC Rocket\Aerostructures\Nosecone\Nosecone \
-Prototype Analysis_files\dp0\FFF\Fluent\FFF-5-00030.dat.gz
+Prototype Analysis_files\dp0\FFF\Fluent\FFF-4-00030.dat.gz
   Current Results File = D:\Projects\UBC Rocket\Aerostructures\Nosecone\\
-Nosecone Prototype Analysis_files\dp0\FFF\Fluent\FFF-5-00030.dat.gz
+Nosecone Prototype Analysis_files\dp0\FFF\Fluent\FFF-4-00030.dat.gz
   Current Timestep = -1
   Current Timevalue = 0
   Edit Case Names = false
@@ -109,9 +185,9 @@ Nosecone Prototype Analysis_files\dp0\FFF\Fluent\FFF-5-00030.dat.gz
   CASE:Case FFF
     Construct Variables From Fourier Coefficients = True
     Current Case Name = D:\Projects\UBC Rocket\Aerostructures\Nosecone\\
-Nosecone Prototype Analysis_files\dp0\FFF\Fluent\FFF-5-00030.dat.gz
+Nosecone Prototype Analysis_files\dp0\FFF\Fluent\FFF-4-00030.dat.gz
     Current Results File = D:\Projects\UBC Rocket\Aerostructures\Nosecone\\
-Nosecone Prototype Analysis_files\dp0\FFF\Fluent\FFF-5-00030.dat.gz
+Nosecone Prototype Analysis_files\dp0\FFF\Fluent\FFF-4-00030.dat.gz
     Current Timestep = -1
     Current Timevalue = 0
     File Angle Units = rad
@@ -219,7 +295,7 @@ Nosecone Prototype Analysis_files\dp0\FFF\Fluent\FFF-5-00030.dat.gz
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
-      Visibility = false
+      Visibility = On
     END
     DOMAIN:air
       Angle Definition Method = Instances in 360
@@ -282,6 +358,97 @@ DEFAULT INSTANCE TRANSFORM:Default Transform
   Y = 0.0
   Z = 0.0
 END
+DEFAULT LEGEND:Default Legend Figure 1
+  Colour = 0, 0, 0
+  Font = Sans Serif
+  Legend Aspect = 0.07
+  Legend Format = %10.3e
+  Legend Orientation = Vertical
+  Legend Plot = /VOLUME RENDERING:Volume Rendering 1 Figure 1
+  Legend Position = 0.02, 0.15
+  Legend Resolution = 256
+  Legend Shading = Smooth
+  Legend Size = 0.6
+  Legend Ticks = 5
+  Legend Title = Legend
+  Legend Title Mode = Variable and Location
+  Legend X Justification = Left
+  Legend Y Justification = Top
+  Related Object = Figure 1
+  Show Legend Units = On
+  Text Colour Mode = Default
+  Text Height = 0.024
+  Text Rotation = 0
+  Visibility = On
+END
+DEFAULT LEGEND:Default Legend Figure 2
+  Colour = 0, 0, 0
+  Font = Sans Serif
+  Legend Aspect = 0.07
+  Legend Format = %10.3e
+  Legend Orientation = Vertical
+  Legend Plot = /CONTOUR:Contour 1 Figure 2
+  Legend Position = 0.02, 0.15
+  Legend Resolution = 256
+  Legend Shading = Smooth
+  Legend Size = 0.6
+  Legend Ticks = 5
+  Legend Title = Legend
+  Legend Title Mode = Variable and Location
+  Legend X Justification = Left
+  Legend Y Justification = Top
+  Related Object = Figure 2
+  Show Legend Units = On
+  Text Colour Mode = Default
+  Text Height = 0.024
+  Text Rotation = 0
+  Visibility = On
+END
+DEFAULT LEGEND:Default Legend Figure 3
+  Colour = 0, 0, 0
+  Font = Sans Serif
+  Legend Aspect = 0.07
+  Legend Format = %10.3e
+  Legend Orientation = Vertical
+  Legend Plot = /STREAMLINE:Streamline 1 Figure 3
+  Legend Position = 0.02, 0.15
+  Legend Resolution = 256
+  Legend Shading = Smooth
+  Legend Size = 0.6
+  Legend Ticks = 5
+  Legend Title = Legend
+  Legend Title Mode = Variable and Location
+  Legend X Justification = Left
+  Legend Y Justification = Top
+  Related Object = Figure 3
+  Show Legend Units = On
+  Text Colour Mode = Default
+  Text Height = 0.024
+  Text Rotation = 0
+  Visibility = On
+END
+DEFAULT LEGEND:Default Legend Generic Report Figure 1
+  Colour = 0, 0, 0
+  Font = Sans Serif
+  Legend Aspect = 0.06
+  Legend Format = %10.3e
+  Legend Orientation = Vertical
+  Legend Position = 0.02, 0.15
+  Legend Resolution = 256
+  Legend Shading = Smooth
+  Legend Size = 0.75
+  Legend Ticks = 5
+  Legend Title = Legend
+  Legend Title Mode = Variable and Location
+  Legend X Justification = Left
+  Legend Y Justification = Center
+  Related Object = Generic Report Figure 1
+  Show Legend Units = On
+  Text Colour Mode = Default
+  Text Height = 0.018
+  Text Rotation = 0
+  Visibility = true
+END
 DEFAULT LEGEND:Default Legend View 1
   Colour = 0, 0, 0
   Font = Sans Serif
@@ -303,7 +470,7 @@ DEFAULT LEGEND:Default Legend View 1
   Text Colour Mode = Default
   Text Height = 0.024
   Text Rotation = 0
-  Visibility = true
+  Visibility = Off
 END
 DEFAULT LEGEND:Default Legend View 2
   Colour = 0, 0, 0
@@ -311,7 +478,7 @@ DEFAULT LEGEND:Default Legend View 2
   Legend Aspect = 0.07
   Legend Format = %10.3e
   Legend Orientation = Vertical
-  Legend Plot = /DATA READER/CASE:Case FFF/BOUNDARY:wall air
+  Legend Plot = /STREAMLINE:Streamline 1
   Legend Position = 0.02, 0.15
   Legend Resolution = 256
   Legend Shading = Smooth
@@ -326,7 +493,7 @@ DEFAULT LEGEND:Default Legend View 2
   Text Colour Mode = Default
   Text Height = 0.024
   Text Rotation = 0
-  Visibility = true
+  Visibility = Off
 END
 DEFAULT LEGEND:Default Legend View 3
   Colour = 0, 0, 0
@@ -334,7 +501,7 @@ DEFAULT LEGEND:Default Legend View 3
   Legend Aspect = 0.07
   Legend Format = %10.3e
   Legend Orientation = Vertical
-  Legend Plot = /DATA READER/CASE:Case FFF/BOUNDARY:wall air
+  Legend Plot = /CONTOUR:Contour 1
   Legend Position = 0.02, 0.15
   Legend Resolution = 256
   Legend Shading = Smooth
@@ -349,7 +516,7 @@ DEFAULT LEGEND:Default Legend View 3
   Text Colour Mode = Default
   Text Height = 0.024
   Text Rotation = 0
-  Visibility = true
+  Visibility = Off
 END
 DEFAULT LEGEND:Default Legend View 4
   Colour = 0, 0, 0
@@ -357,7 +524,7 @@ DEFAULT LEGEND:Default Legend View 4
   Legend Aspect = 0.07
   Legend Format = %10.3e
   Legend Orientation = Vertical
-  Legend Plot = /CONTOUR:Contour 1
+  Legend Plot = /SURFACE GROUP:wall air Figure 3
   Legend Position = 0.02, 0.15
   Legend Resolution = 256
   Legend Shading = Smooth
@@ -401,33 +568,36 @@ MASS FLOW CALC OPTION ON PHYSICAL SURFACES:
   Option = Interpolated
 END
 REPORT:
+  Excluded Report Items = /TITLE PAGE,/COMMENT:Generic Report Comment 1,/\
+VIEW:Generic Report Figure 1
   Report Items = /TITLE PAGE,/REPORT/FILE INFORMATION OPTIONS,/REPORT/MESH \
 STATISTICS OPTIONS,/REPORT/PHYSICS SUMMARY OPTIONS,/REPORT/SOLUTION SUMMARY \
-OPTIONS,/COMMENT:User Data
+OPTIONS,/COMMENT:Generic Report Comment 1,/VIEW:Generic Report Figure 1,/\
+VIEW:Figure 1,/VIEW:Figure 2,/VIEW:Figure 3
   FILE INFORMATION OPTIONS:
-    Include In Report = true
+    Include In Report = false
     This Exists = true
   END
   MESH STATISTICS OPTIONS:
-    Include In Report = true
-    Show Connectivity Number = false
-    Show Edge Length Ratio = false
-    Show Element Volume Ratio = false
-    Show Max Face Angle = false
-    Show Min Face Angle = false
+    Include In Report = false
+    Show Connectivity Number = true
+    Show Edge Length Ratio = true
+    Show Element Volume Ratio = true
+    Show Max Face Angle = true
+    Show Min Face Angle = true
     Show Number of Elements = true
-    Show Number of Hexahedra = false
+    Show Number of Hexahedra = true
     Show Number of Nodes = true
-    Show Number of Polyhedra = false
-    Show Number of Pyramids = false
-    Show Number of Tetrahedra = false
-    Show Number of Wedges = false
+    Show Number of Polyhedra = true
+    Show Number of Pyramids = true
+    Show Number of Tetrahedra = true
+    Show Number of Wedges = true
     This Exists = true
   END
   PHYSICS SUMMARY OPTIONS:
-    Include In Report = true
-    Show Boundary Physics = true
-    Show Domain Physics = true
+    Include In Report = false
+    Show Boundary Physics = On
+    Show Domain Physics = On
     This Exists = true
   END
   PREVIEW:
@@ -441,16 +611,16 @@ OPTIONS,/COMMENT:User Data
       Custom Figure Size Width = 512
       Figure Image Type = png
       Figure Size = 512 x 384
-      Fit Views = false
+      Fit Views = true
       This Exists = true
     END
   END
   PUBLISH:
-    Default Report Name = Report
-    Generate CVF = false
-    Report Format = HTML
-    Report Path = ./Report.htm
-    Save Images In Separate Folder = true
+    Default Report Name = GenericReport
+    Generate CVF = Off
+    Report Format = Text
+    Report Path = C:/Users/Forti/Desktop/GenericReport.txt
+    Save Images In Separate Folder = On
     This Exists = true
     OUTPUT SETTINGS:
       Chart Image Type = png
@@ -461,16 +631,23 @@ OPTIONS,/COMMENT:User Data
       Custom Figure Size Width = 512
       Figure Image Type = png
       Figure Size = 512 x 384
-      Fit Views = false
+      Fit Views = true
       This Exists = true
     END
   END
+  REPORT PROPERTIES:
+    Execution Type = State
+    Keywords = generic
+    Report Support Level = None
+    Report Template Description = This is a generic report.
+    Report Template Name = Generic Report
+  END
   SOLUTION SUMMARY OPTIONS:
     Include In Report = false
-    Show Boundary Flow Summary = true
-    Show Force and Torque Summary = false
-    Show Forces = true
-    Show Torques = true
+    Show Boundary Flow Summary = On
+    Show Force and Torque Summary = On
+    Show Forces = On
+    Show Torques = On
     This Exists = true
   END
 END
@@ -546,10 +723,16 @@ END
 SCALAR VARIABLE:Streamline Number on Streamline 1
   Boundary Values = Conservative
 END
+SCALAR VARIABLE:Streamline Number on Streamline 1 Figure 3
+  Boundary Values = Conservative
+END
 SCALAR VARIABLE:Temperature
   Boundary Values = Conservative
 END
 SCALAR VARIABLE:Time on Streamline 1
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Time on Streamline 1 Figure 3
   Boundary Values = Conservative
 END
 SCALAR VARIABLE:Turbulence Eddy Dissipation
@@ -754,7 +937,7 @@ STREAMLINE:Streamline 1
   Transparency = 0.0
   Variable = Velocity
   Variable Boundary Values = Conservative
-  Visibility = true
+  Visibility = On
   OBJECT VIEW TRANSFORM:
     Apply Reflection = Off
     Apply Rotation = Off
@@ -772,6 +955,188 @@ STREAMLINE:Streamline 1
     Y = 0.0 [m]
     Z = 0.0 [m]
   END
+END
+STREAMLINE:Streamline 1 Figure 3
+  Absolute Tolerance = 0.0 [m]
+  Add Sample Vertex Normals = Off
+  Apply Instancing Transform = On
+  Colour = 0.75, 0.75, 0.75
+  Colour Map = Default Colour Map
+  Colour Mode = Use Plot Variable
+  Colour Scale = Linear
+  Colour Variable = Velocity
+  Colour Variable Boundary Values = Conservative
+  Cross Periodics = On
+  Culling Mode = No Culling
+  Domain List = air
+  Draw Faces = On
+  Draw Lines = Off
+  Draw Streams = On
+  Draw Symbols = Off
+  Grid Tolerance = 0.01
+  Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+  Lighting = On
+  Line Colour = 0, 0, 0
+  Line Width = 1
+  Location List = input
+  Locator Sampling Method = Equally Spaced
+  Max = 0.0 [m s^-1]
+  Maximum Number of Items = 25
+  Min = 0.0 [m s^-1]
+  Number of Samples = 100
+  Number of Sides = 8
+  Random Seed = 1
+  Range = Global
+  Reduction Factor = 1.0
+  Reduction or Max Number = Max Number
+  Sample Spacing = 0.1
+  Sampling Accuracy = High
+  Sampling Aspect Ratio = 1
+  Sampling Grid Angle = 0 [degree]
+  Seed Point Type = Equally Spaced Samples
+  Simplify Geometry = Off
+  Specular Lighting = On
+  Stream Drawing Mode = Line
+  Stream Initial Direction = 0 , 0 , 0
+  Stream Size = 1.0
+  Stream Symbol = Ball
+  Streamline Direction = Forward
+  Streamline Maximum Periods = 20
+  Streamline Maximum Segments = 10000
+  Streamline Maximum Time = 0.0 [s]
+  Streamline Solver Type = RungeKutta2
+  Streamline Type = 3D Streamline
+  Streamline Width = 2
+  Surface Drawing = Smooth Shading
+  Surface Streamline Direction = Forward and Backward
+  Symbol Size = 1.0
+  Symbol Start Time = 10.0 [s]
+  Symbol Stop Time = -10.0 [s]
+  Symbol Time Interval = 1.0 [s]
+  Tolerance Mode = Grid Relative
+  Transparency = 0.0
+  Variable = Velocity
+  Variable Boundary Values = Conservative
+  Visibility = On
+  OBJECT VIEW TRANSFORM:
+    Apply Reflection = Off
+    Apply Rotation = Off
+    Apply Scale = Off
+    Apply Translation = Off
+    Principal Axis = Z
+    Reflection Plane Option = XY Plane
+    Rotation Angle = 0.0 [degree]
+    Rotation Axis From = 0 [m], 0 [m], 0 [m]
+    Rotation Axis To = 0 [m], 0 [m], 0 [m]
+    Rotation Axis Type = Principal Axis
+    Scale Vector = 1 , 1 , 1
+    Translation Vector = 0 [m], 0 [m], 0 [m]
+    X = 0.0 [m]
+    Y = 0.0 [m]
+    Z = 0.0 [m]
+  END
+END
+SURFACE GROUP:wall air Figure 1
+  Apply Instancing Transform = On
+  Apply Texture = Off
+  Blend Texture = On
+  Colour = 0.2, 0.5, 1
+  Colour Map = Default Colour Map
+  Colour Mode = Constant
+  Colour Scale = Linear
+  Colour Variable Boundary Values = Hybrid
+  Culling Mode = No Culling
+  Domain List = /DATA READER/CASE:Case FFF/DOMAIN:air
+  Draw Faces = On
+  Draw Lines = Off
+  Instancing Transform = Default Transform
+  Lighting = true
+  Line Colour = 0, 0, 0
+  Line Colour Mode = Default
+  Line Width = 1
+  Location List = /DATA READER/CASE:Case FFF/BOUNDARY:wall air
+  Range = Global
+  Render Edge Angle = 0 [degree]
+  Specular Lighting = On
+  Surface Drawing = Smooth Shading
+  Texture Angle = 0
+  Texture Direction = 0.0, 1.0, 0.0
+  Texture Material = Metal
+  Texture Position = 0.0, 0.0
+  Texture Scale = 1.0
+  Texture Type = Predefined
+  Tile Texture = Off
+  Transform Texture = Off
+  Transparency = 0.0
+  Visibility = On
+END
+SURFACE GROUP:wall air Figure 2
+  Apply Instancing Transform = On
+  Apply Texture = Off
+  Blend Texture = On
+  Colour = 0.2, 0.5, 1
+  Colour Map = Default Colour Map
+  Colour Mode = Constant
+  Colour Scale = Linear
+  Colour Variable Boundary Values = Hybrid
+  Culling Mode = No Culling
+  Domain List = /DATA READER/CASE:Case FFF/DOMAIN:air
+  Draw Faces = On
+  Draw Lines = Off
+  Instancing Transform = Default Transform
+  Lighting = true
+  Line Colour = 0, 0, 0
+  Line Colour Mode = Default
+  Line Width = 1
+  Location List = /DATA READER/CASE:Case FFF/BOUNDARY:wall air
+  Range = Global
+  Render Edge Angle = 0 [degree]
+  Specular Lighting = On
+  Surface Drawing = Smooth Shading
+  Texture Angle = 0
+  Texture Direction = 0.0, 1.0, 0.0
+  Texture Material = Metal
+  Texture Position = 0.0, 0.0
+  Texture Scale = 1.0
+  Texture Type = Predefined
+  Tile Texture = Off
+  Transform Texture = Off
+  Transparency = 0.0
+  Visibility = On
+END
+SURFACE GROUP:wall air Figure 3
+  Apply Instancing Transform = On
+  Apply Texture = Off
+  Blend Texture = On
+  Colour = 0.2, 0.5, 1
+  Colour Map = Default Colour Map
+  Colour Mode = Constant
+  Colour Scale = Linear
+  Colour Variable Boundary Values = Hybrid
+  Culling Mode = No Culling
+  Domain List = /DATA READER/CASE:Case FFF/DOMAIN:air
+  Draw Faces = On
+  Draw Lines = Off
+  Instancing Transform = Default Transform
+  Lighting = true
+  Line Colour = 0, 0, 0
+  Line Colour Mode = Default
+  Line Width = 1
+  Location List = /DATA READER/CASE:Case FFF/BOUNDARY:wall air
+  Range = Global
+  Render Edge Angle = 0 [degree]
+  Specular Lighting = On
+  Surface Drawing = Smooth Shading
+  Texture Angle = 0
+  Texture Direction = 0.0, 1.0, 0.0
+  Texture Material = Metal
+  Texture Position = 0.0, 0.0
+  Texture Scale = 1.0
+  Texture Type = Predefined
+  Tile Texture = Off
+  Transform Texture = Off
+  Transparency = 0.0
+  Visibility = On
 END
 SYMBOL CONTROL:
   Symbol Size = 1
@@ -858,11 +1223,13 @@ SYSTEM COLOUR MAP:Zebra
   Colour Map Type = Zebra
 END
 TITLE PAGE:
-  Include ANSYS Logo = true
-  Include Custom Logo = false
-  Include Date = true
-  Include TOC = true
-  Show Captions in TOC = true
+  Include ANSYS Logo = Off
+  Include Custom Logo = Off
+  Include Date = Off
+  Include TOC = Off
+  Report Author = Aerostructures
+  Report Title = Nosecone Analysis
+  Show Captions in TOC = On
   Title Page Exists = true
 END
 UNIT SYSTEM:
@@ -926,6 +1293,131 @@ END
 VECTOR VARIABLE:Wall Shear
   Boundary Values = Conservative
 END
+VIEW:Figure 1
+  Angular Coord Shift = 0.0
+  Auto Center = false
+  Axis Visibility = true
+  Border Visibility = false
+  Camera Mode = User Specified
+  Clip Plane = Clip Plane 1
+  Clip Scene = 1
+  Coord Transform = Cartesian
+  Hide Difference Case = false
+  Highlight Type = Surface Mesh
+  Is A Figure = true
+  Light Angle = 50, 110
+  Local Object List = /SURFACE GROUP:wall air Figure 1,/VOLUME \
+RENDERING:Volume Rendering 1 Figure 1
+  Object Visibility List = /DEFAULT LEGEND:Default Legend Figure 1,/SURFACE \
+GROUP:wall air Figure 1,/VOLUME RENDERING:Volume Rendering 1 Figure 1,/\
+WIREFRAME:Wireframe
+  Projection = Orthographic
+  Ruler Visibility = true
+  Standard View = Isometric Y
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pan = 0,0
+    Pivot Point = 0.0674029,0.00614519,-0.00118963
+    Rotation = -90, 0, 0
+    Rotation Quaternion = 0,0,0,1
+    Scale = 5.28652
+    Send To Viewer = True
+  END
+END
+VIEW:Figure 2
+  Angular Coord Shift = 0.0
+  Auto Center = false
+  Axis Visibility = true
+  Border Visibility = false
+  Camera Mode = User Specified
+  Clip Plane = Clip Plane 2
+  Clip Scene = 1
+  Coord Transform = Cartesian
+  Hide Difference Case = false
+  Highlight Type = Surface Mesh
+  Is A Figure = true
+  Light Angle = 50, 110
+  Local Object List = /CONTOUR:Contour 1 Figure 2,/SURFACE GROUP:wall air \
+Figure 2
+  Object Visibility List = /CONTOUR:Contour 1 Figure 2,/DEFAULT LEGEND:Default \
+Legend Figure 2,/SURFACE GROUP:wall air Figure 2,/WIREFRAME:Wireframe
+  Projection = Orthographic
+  Ruler Visibility = true
+  Standard View = Isometric Y
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pan = 0, 0
+    Pivot Point = 0.0497222, -0.0490108, -0.0440548
+    Rotation = -90, 0, 0
+    Rotation Quaternion = 0.279848, -0.364705, -0.115917, 0.880476
+    Scale = 5.26719
+    Send To Viewer = True
+  END
+END
+VIEW:Figure 3
+  Angular Coord Shift = 0.0
+  Auto Center = false
+  Axis Visibility = true
+  Border Visibility = false
+  Camera Mode = User Specified
+  Clip Plane = Clip Plane 3
+  Clip Scene = 1
+  Coord Transform = Cartesian
+  Hide Difference Case = false
+  Highlight Type = Surface Mesh
+  Is A Figure = true
+  Light Angle = 50, 110
+  Local Object List = /SURFACE GROUP:wall air Figure 3,/STREAMLINE:Streamline \
+1 Figure 3
+  Object Visibility List = /DEFAULT LEGEND:Default Legend Figure 3,/\
+STREAMLINE:Streamline 1 Figure 3,/SURFACE GROUP:wall air Figure 3,/\
+WIREFRAME:Wireframe
+  Projection = Orthographic
+  Ruler Visibility = true
+  Standard View = Isometric Y
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pan = 0, 0
+    Pivot Point = 0.100225, 0.00550553, 0.0655617
+    Rotation = -90, 0, 0
+    Rotation Quaternion = 0.0340762, -0.913626, -0.010537, 0.404992
+    Scale = 4.46555
+    Send To Viewer = True
+  END
+END
+VIEW:Generic Report Figure 1
+  Angular Coord Shift = 0.0
+  Auto Center = false
+  Axis Visibility = On
+  Border Visibility = false
+  Camera Mode = User Specified
+  Clip Scene = false
+  Coord Transform = Cartesian
+  Hide Difference Case = false
+  Highlight Type = Surface Mesh
+  Is A Figure = true
+  Light Angle = 50, 110
+  Object Visibility List = /DEFAULT LEGEND:Default Legend Generic Report \
+Figure 1,/WIREFRAME:Wireframe
+  Projection = Orthographic
+  Ruler Visibility = Off
+  Standard View = Isometric Y
+  Valid Case = All Cases
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pan = 0, 0
+    Pivot Point = 0, 0, 0
+    Rotation = -90, 0, 0
+    Rotation Quaternion = 0.279848, -0.364705, -0.115917, 0.880476
+    Scale = 0.222681
+    Send To Viewer = True
+  END
+  OBJECT REPORT OPTIONS:
+    Automatic Item = None
+    Generation = Manual
+    Report Caption = Iso View of Wireframe
+  END
+END
 VIEW:View 1
   Angular Coord Shift = 0.0
   Auto Center = false
@@ -947,11 +1439,11 @@ WIREFRAME:Wireframe
   Standard View = Isometric Y
   CAMERA:
     Option = Pivot Point and Quaternion
-    Pan = -0.351756,-0.00574294
-    Pivot Point = 0.681767,0.14194,0.282212
+    Pan = 0,0
+    Pivot Point = 0.0674029,0.00614519,-0.00118963
     Rotation = -90, 0, 0
-    Rotation Quaternion = -0.070157,0.00872493,0.993182,0.092739
-    Scale = 2.52918
+    Rotation Quaternion = 0,0,0,1
+    Scale = 5.28652
     Send To Viewer = True
   END
 END
@@ -961,13 +1453,15 @@ VIEW:View 2
   Axis Visibility = true
   Border Visibility = false
   Camera Mode = User Specified
-  Clip Scene = false
+  Clip Plane = Clip Plane 3
+  Clip Scene = 1
   Coord Transform = Cartesian
   Hide Difference Case = false
   Highlight Type = Surface Mesh
   Is A Figure = false
   Light Angle = 50, 110
-  Object Visibility List = /DEFAULT LEGEND:Default Legend View 2,/\
+  Object Visibility List = /DATA READER/CASE:Case FFF/BOUNDARY:wall air,/\
+DEFAULT LEGEND:Default Legend View 2,/STREAMLINE:Streamline 1,/\
 WIREFRAME:Wireframe
   Projection = Orthographic
   Ruler Visibility = true
@@ -975,10 +1469,10 @@ WIREFRAME:Wireframe
   CAMERA:
     Option = Pivot Point and Quaternion
     Pan = 0,0
-    Pivot Point = 0,0,0
+    Pivot Point = 0.100225,0.00550553,0.0655617
     Rotation = -90, 0, 0
-    Rotation Quaternion = 0.279848,-0.364705,-0.115917,0.880476
-    Scale = 1
+    Rotation Quaternion = 0.0340762,-0.913626,-0.010537,0.404992
+    Scale = 4.46555
     Send To Viewer = True
   END
 END
@@ -988,24 +1482,25 @@ VIEW:View 3
   Axis Visibility = true
   Border Visibility = false
   Camera Mode = User Specified
-  Clip Scene = false
+  Clip Plane = Clip Plane 2
+  Clip Scene = 1
   Coord Transform = Cartesian
   Hide Difference Case = false
   Highlight Type = Surface Mesh
   Is A Figure = false
   Light Angle = 50, 110
-  Object Visibility List = /DEFAULT LEGEND:Default Legend View 3,/\
-WIREFRAME:Wireframe
+  Object Visibility List = /CONTOUR:Contour 1,/DATA READER/CASE:Case FFF/\
+BOUNDARY:wall air,/DEFAULT LEGEND:Default Legend View 3,/WIREFRAME:Wireframe
   Projection = Orthographic
   Ruler Visibility = true
   Standard View = Isometric Y
   CAMERA:
     Option = Pivot Point and Quaternion
     Pan = 0,0
-    Pivot Point = 0,0,0
+    Pivot Point = 0.0497222,-0.0490108,-0.0440548
     Rotation = -90, 0, 0
     Rotation Quaternion = 0.279848,-0.364705,-0.115917,0.880476
-    Scale = 1
+    Scale = 5.26719
     Send To Viewer = True
   END
 END
@@ -1021,8 +1516,8 @@ VIEW:View 4
   Highlight Type = Surface Mesh
   Is A Figure = false
   Light Angle = 50, 110
-  Object Visibility List = /CONTOUR:Contour 1,/DEFAULT LEGEND:Default Legend \
-View 4,/WIREFRAME:Wireframe
+  Object Visibility List = /DEFAULT LEGEND:Default Legend View 4,/\
+WIREFRAME:Wireframe
   Projection = Orthographic
   Ruler Visibility = true
   Standard View = Isometric Y
@@ -1032,7 +1527,7 @@ View 4,/WIREFRAME:Wireframe
     Pivot Point = 0, 0, 0
     Rotation = -90, 0, 0
     Rotation Quaternion = 0.279848, -0.364705, -0.115917, 0.880476
-    Scale = 1.05062
+    Scale = 0.975605
     Send To Viewer = True
   END
 END
@@ -1048,13 +1543,13 @@ VIEWPORT MANAGER:
   Global Text Colour = 0,0,0
   Maximized Viewport = -1
   Synchronize Camera = false
-  Synchronize Visibility = true
+  Synchronize Visibility = Off
   View Length Units = m
   Viewport 1 View = View 1
   Viewport 2 View = View 2
   Viewport 3 View = View 3
   Viewport 4 View = View 4
-  Viewport Layout = No Split
+  Viewport Layout = Vertical And Bottom Split
   X Split = 0.5
   Y Split = 0.5
 END
@@ -1097,7 +1592,71 @@ VOLUME RENDERING:Volume Rendering 1
   Transparency Colour Map = Transparency
   Variable = Pressure
   Variable Boundary Values = Conservative
-  Visibility = true
+  Visibility = Off
+  Volume Rendering Max = 0.0 [Pa]
+  Volume Rendering Min = 0.0 [Pa]
+  Volume Rendering Normals = 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0
+  Volume Rendering Range = Global
+  Volume Rendering Scale = Linear
+  Volume Resolution = 100
+  OBJECT VIEW TRANSFORM:
+    Apply Reflection = Off
+    Apply Rotation = Off
+    Apply Scale = Off
+    Apply Translation = Off
+    Principal Axis = Z
+    Reflection Plane Option = XY Plane
+    Rotation Angle = 0.0 [degree]
+    Rotation Axis From = 0 [m], 0 [m], 0 [m]
+    Rotation Axis To = 0 [m], 0 [m], 0 [m]
+    Rotation Axis Type = Principal Axis
+    Scale Vector = 1 , 1 , 1
+    Translation Vector = 0 [m], 0 [m], 0 [m]
+    X = 0.0 [m]
+    Y = 0.0 [m]
+    Z = 0.0 [m]
+  END
+END
+VOLUME RENDERING:Volume Rendering 1 Figure 1
+  Apply Instancing Transform = On
+  Apply Texture = Off
+  Blend Texture = On
+  Clip Planes = On
+  Colour = 0.75, 0.75, 0.75
+  Colour Map = Default Colour Map
+  Colour Mode = Use Plot Variable
+  Colour Scale = Linear
+  Colour Variable = Pressure
+  Colour Variable Boundary Values = Conservative
+  Culling Mode = No Culling
+  Domain List = air
+  Draw Faces = On
+  Draw Lines = Off
+  Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+  Lighting = Off
+  Line Colour = 0, 0, 0
+  Line Colour Mode = Default
+  Line Width = 1
+  Make Edges Transparent = Off
+  Max = 0.0 [Pa]
+  Min = 0.0 [Pa]
+  Range = Global
+  Render Edge Angle = 0 [degree]
+  Specular Lighting = Off
+  Surface Drawing = Smooth Shading
+  Texture Angle = 0
+  Texture Direction = 0 , 1 , 0
+  Texture Material = Metal
+  Texture Position = 0 , 0
+  Texture Scale = 1
+  Texture Type = Predefined
+  Tile Texture = Off
+  Transform Texture = Off
+  Transparency = 0.2
+  Transparency Colour Map = Transparency
+  Variable = Pressure
+  Variable Boundary Values = Conservative
+  Visibility = Off
   Volume Rendering Max = 0.0 [Pa]
   Volume Rendering Min = 0.0 [Pa]
   Volume Rendering Normals = 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0
