@@ -35,7 +35,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">4571</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 5065, "Input": 4569, "Output": 4569}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 28234, "Input": 4569, "Output": 4569}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{}</last-update-regen-times>
       <unique-system-dir valType="String">FFF</unique-system-dir>
@@ -171,7 +171,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">4987</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 4995, "Input": 4974, "Output": 4984}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 5068, "Input": 4974, "Output": 4984}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 4571, "Mesh": 4646, "Setup": 4982, "Solution": 4959, "Results": 4969, "Engineering Data": 3845, "Geometry 1": 0, "Model": 0, "Setup 1": 0, "Solution 1": 0, "Results 1": 0, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">FFF</unique-system-dir>
@@ -217,8 +217,8 @@
       <container-type valType="String">Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">5063</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 4996, "Input": 5062, "Output": 2755}</last-modified-by-usage>
+      <last-updated valType="Int64">5096</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 4996, "Input": 5095, "Output": 2755}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 4571, "Mesh": 4646, "Setup": 4982, "Solution": 4987, "Results": 4969, "Engineering Data": 3845, "Geometry 1": 0, "Model": 0, "Setup 1": 0, "Solution 1": 0, "Results 1": 0, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">FFF</unique-system-dir>
@@ -251,7 +251,6 @@
       <format valType="String">MatML31</format>
       <DefaultSolidMaterial valType="String">fefc8f31-da58-40be-941a-ec66ee157d5b</DefaultSolidMaterial>
       <DefaultFluidMaterial valType="String">EDA_UNINITIALIZED_EDA</DefaultFluidMaterial>
-      <DefaultMaterialsChanged valType="Boolean">true</DefaultMaterialsChanged>
       <Source_DataObject valType="StringArray">
         <ArrayEntry Index="0">Structural Steel::ANSYS%:%:Disk%:%:General_Materials.xml::Structural Steel</ArrayEntry>
       </Source_DataObject>
@@ -266,7 +265,7 @@
       <Object Name="/Engineering Data/EngineeringData:Engineering Data" Version="1.0">
         <class-type valType="String">EngineeringData</class-type>
         <object-name valType="String">Engineering Data</object-name>
-        <member-data valType="String">{"DisplayText": "Engineering Data", "DataTypeToTransferData": {"material": $$8012bf61-764c-4d44-a81a-daed876b5853}, "TransferFile": None}</member-data>
+        <member-data valType="String">{"DisplayText": "Engineering Data", "DataTypeToTransferData": {"material": $$8012bf61-764c-4d44-a81a-daed876b5853}, "TransferFile": $$ca537d06-9b18-47e0-bd41-bb0b05659e56}</member-data>
       </Object>
       <Object Name="/Engineering Data/Material:Structural Steel" Version="1.0">
         <class-type valType="String">Material</class-type>
@@ -591,7 +590,7 @@
       <Object Name="/Engineering Data/ResourceTransferData:TransferData_material" Version="1.0">
         <class-type valType="String">ResourceTransferData</class-type>
         <object-name valType="String">TransferData_material</object-name>
-        <member-data valType="String">{"DisplayText": "TransferData_material", "Guids": ["201dfc2b-70bb-4069-8991-11a15a055b29"], "Data": None, "LastUpdate": 0}</member-data>
+        <member-data valType="String">{"DisplayText": "TransferData_material", "Guids": ["201dfc2b-70bb-4069-8991-11a15a055b29"], "Data": $$ca537d06-9b18-47e0-bd41-bb0b05659e56, "LastUpdate": 3845}</member-data>
       </Object>
     </Container>
     <Container Name="Geometry 1" Version="1.0">
@@ -599,7 +598,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 3919, "Input": 3856, "Output": 3856}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 28231, "Input": 28199, "Output": 28199}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{}</last-update-regen-times>
       <unique-system-dir valType="String">SYS</unique-system-dir>
@@ -608,11 +607,12 @@
         <class-type valType="String">Geometry</class-type>
         <object-name valType="String">GeometryDataObject</object-name>
         <member-data valType="String">{"DisplayText": "GeometryDataObject", "_geometryFileRelativePath": "", "_geometryTeamcenterConnection": None, "_geometryPlugInName": "", "GeomFileReference": None, "GeomRepositoryFileReference": None, "GeometryImportSolidBodies": True, "GeometryImportSurfaceBodies": True, "GeometryImportLineBodies": False, "GeometryImportParameters": "CADImportParameterType_Independent", "GeometryImportParametersFilter": "ANS;DS", "GeometryImportCadAttributes": False, "GeometryImportCadAttributesFilter": "SDFEA;DDM", "GeometryImportNamedSelections": False, "GeometryImportNamedSelectionsFilter": "NS", "GeometryImportMaterialProperties": False, "GeometryImportAnalysisType": "AnalysisType_3D", "GeometryImportCadAssociativity": True, "GeometryImportCoordinateSystems": False, "GeometryImportCoordinateSystemsFilter": "", "GeometryImportWorkPoints": False, "GeometryImportSavePartFile": False, "GeometryImportImportUsingInstances": True, "GeometryImportSmartUpdate": True, "GeometryImportComparePartsOnUpdate": "ComparePartsMethod_None", "GeometryImportComparePartsTolerance": "ComparePartsTolerance_Tight", "GeometryImportProcessEnclosures": True, "GeometryImportDecomposeDisjointFaces": True, "GeometryImportMixedResolutionOption": "MixedImport_None", "GeometryImportWeightclass": "ImportWeightclass_Heavyweight", "GeometryImportFlattenAssembly": True, "GeometryImportSTLSDTAlgorithm": "STLSDTAlgorithm_Curvatures", "GeometryImportSTLCurvatureAlgorithmSharpEdgesAngle": 30, "GeometryImportSTLCurvatureAlgorithmPlanesToleranceAngle": 0.5, "GeometryImportSTLCurvatureAlgorithmIgnoreSecondaryNodes": True, "GeometryImportSTLAngleAlgorithmCutAngle": 15, "GeometryImportSTLAngleAlgorithmToleranceAngle": 15, "GeometryImportSpaceClaimExplodeUnsharedComponents": True, "Guid": "ed9bf35f-04c6-4885-a1b1-474c340d5954", "ObjectState": 5, "UpstreamConnections": {}, "ImportedFeatures": {}, "IsSpaceClaimGeometry": False, "IsModelerModeEnabled": False, "AreParametersOutOfDate": False, "RegisteredExternalFilesInfo": {}, "AreParametersMigratedFromLegacyDatabaseImport": False}</member-data>
+        <properties-setByUserFlag-data valType="String">["ObjectState"]</properties-setByUserFlag-data>
       </Object>
       <Object Name="/Geometry 1/TransferData:Geometry" Version="1.0">
         <class-type valType="String">TransferData</class-type>
         <object-name valType="String">Geometry</object-name>
-        <member-data valType="String">{"DisplayText": "Geometry", "ConnectionKeys": ["5cecb772-c004-4c8b-be43-993ee091d036"], "Data": None}</member-data>
+        <member-data valType="String">{"DisplayText": "Geometry", "ConnectionKeys": ["5cecb772-c004-4c8b-be43-993ee091d036"], "Data": $$fe7b5d38-bccb-4805-8f6a-c1839a6e9b45}</member-data>
       </Object>
     </Container>
     <Container Name="Model" Version="1.0">
@@ -620,8 +620,8 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 3913, "Input": 3917, "Output": 3907}</last-modified-by-usage>
-      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-modified-by-usage valType="String">{"Extrinsic": 28182, "Input": 28183, "Output": 5151}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{"MechanicalModel": 28184, "MechanicalMesh": 28184}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{}</last-update-regen-times>
       <unique-system-dir valType="String">SYS</unique-system-dir>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
@@ -687,11 +687,11 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 3934, "Input": 3940, "Output": 3930}</last-modified-by-usage>
-      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{}</last-update-regen-times>
+      <last-modified-by-usage valType="String">{"Extrinsic": 5160, "Input": 28180, "Output": 5160}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{"SimulationSetup": 28181}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 4571, "Mesh": 4646, "Setup": 4982, "Solution": 4987, "Results": 5096, "Engineering Data": 3845, "Geometry 1": 5109, "Setup 1": 0, "Solution 1": 0, "Results 1": 0, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS</unique-system-dir>
-      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Setup 1/MechanicalSystemType:SystemClass for Structural|Static|ANSYS" Version="1.0">
         <class-type valType="String">MechanicalSystemType</class-type>
         <object-name valType="String">SystemClass for Structural|Static|ANSYS</object-name>
@@ -728,9 +728,9 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 3960, "Input": 3955, "Output": 3952}</last-modified-by-usage>
-      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 3043, "Mesh": 3075, "Setup": 3113, "Solution": 3120, "Results": 0, "Engineering Data": 3845, "Geometry 1": 0, "Model": 0, "Setup 1": 0, "Solution 1": 0, "Results 1": 0}</last-update-regen-times>
+      <last-modified-by-usage valType="String">{"Extrinsic": 28177, "Input": 28178, "Output": 5155}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{"SimulationSolution": 28179, "SimulationSolutionDataInternal": 28179}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 4571, "Mesh": 4646, "Setup": 4982, "Solution": 4987, "Results": 5096, "Engineering Data": 3845, "Geometry 1": 5109, "Model": 5152, "Solution 1": 0, "Results 1": 0, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Solution 1/MechanicalSystemType:SystemClass for Structural|Static|ANSYS" Version="1.0">
@@ -764,11 +764,6 @@
         <object-name valType="String">SimulationSolutionSettingsEntity</object-name>
         <member-data valType="String">{"DisplayText": "SimulationSolutionSettingsEntity", "UpdateOption": "Use application default", "SolveProcessSetting": ""}</member-data>
       </Object>
-      <Object Name="/Solution 1/RemoteUpdateInformationStorage:RemoteUpdateInformationStorage" Version="1.0">
-        <class-type valType="String">RemoteUpdateInformationStorage</class-type>
-        <object-name valType="String">RemoteUpdateInformationStorage</object-name>
-        <member-data valType="String">{"DisplayText": "RemoteUpdateInformationStorage", "RemoteUpdateInformationMap": {}}</member-data>
-      </Object>
       <Object Name="/Solution 1/ExpertProperties:ExpertProperties" Version="1.0">
         <class-type valType="String">ExpertProperties</class-type>
         <object-name valType="String">ExpertProperties</object-name>
@@ -784,12 +779,12 @@
       <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationResults</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 3980, "Input": 3983, "Output": 3976}</last-modified-by-usage>
-      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 3043, "Mesh": 3075, "Setup": 3113, "Solution": 3120, "Results": 0, "Engineering Data": 3845, "Geometry 1": 0, "Model": 0, "Setup 1": 0, "Solution 1": 0, "Results 1": 0}</last-update-regen-times>
+      <last-updated valType="Int64">5169</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 28170, "Input": 28171, "Output": 5167}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{"SimulationResults": 28172}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 4571, "Mesh": 4646, "Setup": 4982, "Solution": 4987, "Results": 5096, "Engineering Data": 3845, "Geometry 1": 5109, "Model": 5152, "Setup 1": 5161, "Results 1": 5163, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS</unique-system-dir>
-      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Results 1/MechanicalSystemType:SystemClass for Structural|Static|ANSYS" Version="1.0">
         <class-type valType="String">MechanicalSystemType</class-type>
         <object-name valType="String">SystemClass for Structural|Static|ANSYS</object-name>
@@ -805,24 +800,10 @@
           <transferDataMap />
         </custom-data>
       </Object>
-      <Object Name="/Results 1/SimulationResultsStlZip:SimulationResultsStlZip" Version="1.0">
-        <class-type valType="String">SimulationResultsStlZip</class-type>
-        <object-name valType="String">SimulationResultsStlZip</object-name>
-        <member-data valType="String">{"DisplayText": "SimulationResultsStlZip", "DataConnections": [], "TransferDataObject": $$b95c02a9-e635-4068-97fe-8b6558766e73, "VersionNumber": 1, "TransferFile": None}</member-data>
-      </Object>
       <Object Name="/Results 1/ExternalModelOutputProvider:ExternalModelOutputProvider" Version="1.0">
         <class-type valType="String">ExternalModelOutputProvider</class-type>
         <object-name valType="String">ExternalModelOutputProvider</object-name>
-        <member-data valType="String">{"DisplayText": "ExternalModelOutputProvider", "DataConnections": [], "TransferDataObject": $$5a1a36ef-49ed-4811-ab7e-6bb9f186b6c2, "SignalModifiedDuringAcquire": True}</member-data>
-      </Object>
-      <Object Name="/Results 1/ExternalModelOutput:ExternalModelOutput" Version="1.0">
-        <class-type valType="String">ExternalModelOutput</class-type>
-        <object-name valType="String">ExternalModelOutput</object-name>
-        <member-data valType="String">{"DisplayText": "ExternalModelOutput", "TransferFile": None, "InputFiles": []}</member-data>
-        <custom-data>
-          <CurrentVersion valType="String">1</CurrentVersion>
-          <value-keys valType="String">{"CurrentVersion": System.Int32}</value-keys>
-        </custom-data>
+        <member-data valType="String">{"DisplayText": "ExternalModelOutputProvider", "DataConnections": [], "TransferDataObject": None, "SignalModifiedDuringAcquire": True}</member-data>
       </Object>
       <Object Name="/Results 1/SimulationImportOptionsForResult:SimulationImportOptionsForResult" Version="1.0">
         <class-type valType="String">SimulationImportOptionsForResult</class-type>

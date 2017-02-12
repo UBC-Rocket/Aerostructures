@@ -8,6 +8,7 @@ dp0/FFF/MECH/FFF.msh
 dp0/FFF/Post/Fluid Flow Fluent.cst
 dp0/global/MECH/FFF.mshdb
 dp0/SYS/ENGD/EngineeringData.xml
+dp0/SYS/ENGD/material.engd
 dp0/designPoint.wbdp
 progress_files/dp0/FFF/Fluent/report.xml
 session_files/journal1.wbjn

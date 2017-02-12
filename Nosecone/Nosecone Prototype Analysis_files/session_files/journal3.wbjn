@@ -1335,3 +1335,87 @@ Report Author = Aerostructures
 Report Title = Nosecone Analysis
 END""")
 Save(Overwrite=True)
+results1.SendCommand(Command="""TITLE PAGE:
+Include ANSYS Logo = Off
+Include Custom Logo = Off
+Include Date = Off
+Include TOC = Off
+Report Author = Aerostructures
+Report Title = Nosecone Analysis
+END""")
+results1.SendCommand(Command=">report save, format=preview")
+results1.SendCommand(Command=">report save, format=preview")
+results1.SendCommand(Command="> report hideItem=/REPORT/PHYSICS SUMMARY OPTIONS")
+results1.SendCommand(Command="> report hideItem=/REPORT/MESH STATISTICS OPTIONS")
+results1.SendCommand(Command="> report hideItem=/REPORT/SOLUTION SUMMARY OPTIONS")
+results1.SendCommand(Command="""TITLE PAGE:
+Include ANSYS Logo = Off
+Include Custom Logo = Off
+Include Date = Off
+Include TOC = Off
+Report Author = Aerostructures
+Report Title = Nosecone Analysis
+END""")
+results1.SendCommand(Command="""TITLE PAGE:
+Include ANSYS Logo = Off
+Include Custom Logo = Off
+Include Date = Off
+Include TOC = Off
+Report Author = Aerostructures
+Report Title = Nosecone Analysis
+END""")
+results1.SendCommand(Command=">report save, format=preview")
+results1.SendCommand(Command="> report hideItem=/VIEW:Generic Report Figure 1")
+results1.SendCommand(Command="""TITLE PAGE:
+Include ANSYS Logo = Off
+Include Custom Logo = Off
+Include Date = Off
+Include TOC = Off
+Report Author = Aerostructures
+Report Title = Nosecone Analysis
+END""")
+results1.SendCommand(Command="""TITLE PAGE:
+Include ANSYS Logo = Off
+Include Custom Logo = Off
+Include Date = Off
+Include TOC = Off
+Report Author = Aerostructures
+Report Title = Nosecone Analysis
+END""")
+results1.SendCommand(Command=">report save, format=preview")
+results1.SendCommand(Command="""REPORT:
+  PUBLISH:
+Generate CVF = Off
+Report Format = Text
+Report Path = C:/Users/Forti/Desktop/GenericReport.txt
+Save Images In Separate Folder = On
+
+END
+END
+>report save""")
+results1.Exit()
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Information*OK")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Close Fluent")')
+system2 = GetSystem(Name="SYS")
+geometry2 = system2.GetContainer(ComponentName="Geometry")
+geometry2.Edit()
+geometry2.Exit()
+modelComponent1 = system2.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system2.GetContainer(ComponentName="Model")
+model1.Edit()
+favorites1 = EngData.LoadFavoriteItems()
+library1 = EngData.OpenLibrary(
+    Name="General Materials",
+    Source="General_Materials.xml")
+library2 = EngData.OpenLibrary(
+    Name="General Non-linear Materials",
+    Source="General Materials Non-linear.xml")
+library3 = EngData.OpenLibrary(
+    Name="Explicit Materials",
+    Source="Explicit_Materials.xml")
+model1.Exit()
+modelComponent1.Reset()
+geometryComponent1 = system2.GetComponent(Name="Geometry")
+geometryComponent1.Reset()
+Save(Overwrite=True)
