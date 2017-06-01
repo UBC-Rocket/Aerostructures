@@ -1,0 +1,19 @@
+﻿# encoding: utf-8
+# Release 18.0
+SetScriptVersion(Version="18.0.351")
+template1 = GetTemplate(TemplateName="Fluid Flow")
+system1 = template1.CreateSystem()
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="C:/Users/johna/OneDrive/Documents/ROCKET/Aerostructures/Aerostructures/Current_Rocket2/Nosecone/NoseConeSim/Nosecone_Prototype_v5_ANSYS.IGS")
+geometry1.Edit()
+geometry1.Exit()
+meshComponent1 = system1.GetComponent(Name="Mesh")
+meshComponent1.Update(AllDependencies=True)
+mesh1 = system1.GetContainer(ComponentName="Mesh")
+mesh1.Edit()
+mesh1.Exit()
+geometry1.Edit()
+geometry1.Exit()
+system1.DisplayText = "NoseCone1"
+geometry1.Edit()
+Save(Overwrite=True)

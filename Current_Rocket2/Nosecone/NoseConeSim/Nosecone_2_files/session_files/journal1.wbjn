@@ -1,0 +1,10 @@
+﻿# encoding: utf-8
+# Release 18.0
+SetScriptVersion(Version="18.0.351")
+template1 = GetTemplate(TemplateName="Fluid Flow")
+system1 = template1.CreateSystem()
+system1.DisplayText = "Nosecone3"
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="C:/Users/johna/OneDrive/Documents/ROCKET/Aerostructures/Aerostructures/Current_Rocket2/Nosecone/NoseConeSim/Nosecone Prototype v5_V2.x_t")
+geometry1.Edit()
+Save(Overwrite=True)
